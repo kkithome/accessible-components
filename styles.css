@@ -7,6 +7,7 @@
 }
 
 #content-heading{
+  display: flex;
   background-color: #b1e1cf;
   border: 1px solid black;
   width: 100%;
@@ -14,22 +15,46 @@
   padding: 2px;
 }
 
-#block-text{
+#image-container1{
+  display: flex;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 100%;
-  height: 20%;
+  height: 60%;
   padding: 2px;
   margin-bottom: 10px;
 }
-.dropbtn{
-  width: 10%;
-  border: 1px solid black;
-  color: 
 
+#image-container2{
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  width: 100%;
+  height: 30%;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+#image-container3{
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  width:100%;
+  height: 120%;
+  padding: 2px;
+  margin-bottom: 10px;
 }
 
 
+#block-text{
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  width: 100%;
+  height: 60%;
+  padding: 2px;
+  margin-bottom: 10px;
+}
 
 
 body {
