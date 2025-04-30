@@ -1,88 +1,201 @@
-#logoBar{
-  width: 100vw;
-  height: 100vh;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#siteLogo{
-  width: 100%;
-}
-
-#content-heading{
-  display: flex;
-  background-color: #b1e1cf;
-  border: 1px solid black;
-  width: 100%;
-  height: 7%;
-  padding: 2px;
-}
-
-#image-container1{
-  display: flex;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 100%;
-  height: 60%;
-  align-items: left;
-  margin-bottom: 10px;
-}
-
-#image-container2{
-  display: flex;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 100%;
-  height: 30%;
-  padding: 2px;
-  margin-bottom: 10px;
-}
-
-#image-container3{
-  display: flex;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width:100%;
-  height: 120%;
-  padding: 2px;
-  margin-bottom: 10px;
-}
-
-
-#block-text1{
-  display: flex;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 100%;
-  height: 60%;
-  padding: 2px;
-  margin-bottom: 10px;
-}
-
 
 body {
-  display: flex;
-  background-color: #f9f3f0;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    background: #e9f5eb;
+    color: #2d2d2d;
+}
+
+header {
+    background: #229263f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family:  'DM Serif', serif;
+    color:rgb(251, 245, 237);
+    font-size: 3cm;
+    line-height: 0.86;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0em;
+}
+
+header p {
+    max-width: 600px;
+    margin: auto;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
 }
 
 
-h1{
-  font-family: Tahoma, Geneva, sans-serif;
-  text-align: center;
-  color: #151837
+.hero-image {
+    width: 100%;
+    max-height: 200px;
+    height: 80%;
+    display: block;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.hero-left-heading {
+    color: #e1fff4;
+}
+
+.hero-left-body {
+    color: rgb(251, 245, 237);
+}
+
+.hero-left-heading,
+.hero-left-body{
+    font-size: large;
+    text-align: left;
+    font-weight: 400;
+}
+
+.hero-subtitle {
+    color:rgb(251, 245, 237);
+    font-family: "DM Serif Display", serif;
+    font-size: 0.75cm;
+    font-weight: 50;
+    color: #e1fff4;
+}
+
+.hero-title {
+    margin-bottom: 8px;
+    font-size: 3cm;
+    display: block;
+}
+
+.hero-title-wrapper{
+    display: inline-block;
+}
+
+.hero-column-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4px;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 0 2rem;
 
 }
 
-h3{
-  font-family: Tahoma, Geneva, sans-serif;
-  text-align: center;
-  margin: auto;
-  padding: 15px;
-  
-
+.hero-left-column,
+.hero-right-column{
+    min-width: 250px;
+    vertical-align: top;
+    padding:0;
+    margin: 0;
 }
 
-h5{
-  font-family: Tahoma, Geneva, sans-serif;
-  text-align: center;
-  font-weight: 400;
-  color:#151837
+.hero-left-column {
+    width: 300px;
+    margin-right: 2px;
+} 
+
+.hero-right-column {
+    flex-grow: 1;
+    text-align: left
 }
 
+.hero-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-content: center;;
+    box-sizing: border-box;
+}
+
+
+
+ol{
+    margin-left: 20px;
+    align-content: center;
+    margin-top: 10px;
+}
+
+blockquote {
+    background-color: whitesmoke;
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border-left: 4px solid #182ef5;
+    align-items: center;
+    
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(244, 244, 244);
+    border: 2px solid black;
+    height: 40px;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-evenly;
+}
+
+#menu a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: large;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    background-color: #3d764f;
+    color:#e0e0e0;
+    
+}
+
+#menu.hidden{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+#progressContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #e0e0e0;
+    z-index: 1000;
+}
+
+#scrollProgress {
+    height: 100%;
+    width: 0%;
+    background-color: #3d764f;
+    transition: width 0.1s;
+}
+
+#overview-header{
+    margin-top: 50px;
+}
